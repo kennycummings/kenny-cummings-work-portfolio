@@ -8,7 +8,7 @@ const Header = () => {
         <img src="assets/images/Kenny-Cummings-LinkedIn-Photo.png" alt="Kenny Cummings LinkedIn Profile Picture" style={{ width: '75px', height: '75px' }} />
       </div>
 
-      {/* ... (rest of your header JSX) */}
+      {/* ... (insert rest of header JSX) */}
     </div>
   );
 };

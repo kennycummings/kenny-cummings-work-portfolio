@@ -3,7 +3,7 @@ import React from 'react';
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-      {/* ... (your navigation JSX) */}
+      {/* ... (insert navigation JSX) */}
     </nav>
   );
 };

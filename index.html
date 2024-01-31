@@ -10,7 +10,69 @@
     <title>Kenny Cummings Portfolio</title>
 
     <style>
-        /* ... (your existing styles) */
+      body {
+            text-align: left;
+            font-family: 'Exo', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+            margin: 0;
+            padding: 0 2%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 25px;
+            font-family: 'Roboto Thin', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, serif;
+            text-align: center;
+            background-color: #212529;
+            color: whitesmoke;
+            margin-top: 20px;
+        }
+
+        footer h2,
+        footer h4,
+        footer h3 {
+            margin: 10px 0;
+        }
+
+        /* Added a media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .header div {
+                font-size: 18px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .text-container,
+            .image-container {
+                width: 100%;
+            }
+
+            .footer {
+                padding: 15px;
+            }
+
+            .navbar-toggler-icon,
+            .navbar-toggler {
+                background-color: #E43F5A;
+            }
+        }
+
+        .navbar {
+            background-color: #E43F5A;
+        }
+
+        .navbar-toggler-icon,
+        .navbar-toggler {
+            background-color: #E43F5A;
+        }
     </style>
 </head>
 

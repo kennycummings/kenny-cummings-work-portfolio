@@ -5,7 +5,7 @@ const Projects = () => {
     <div>
       <h2>Web Development Projects</h2>
       <div className="web-development-projects">
-        {/* ... (your projects JSX) */}
+        {/* ... (insert projects JSX) */}
       </div>
     </div>
   );
