@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
@@ -11,21 +11,21 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <Header />
         <Navigation />
 
-        <Switch>
-          <Route path="/about" component={AboutMe} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+        <Routes>
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Add more routes as needed */}
-        </Switch>
+        </Routes>
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
