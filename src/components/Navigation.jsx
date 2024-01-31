@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navigation = () => {
   return (
-    <nav>
-      {/* Your navigation links go here */}
+    <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+      {/* ... (your navigation JSX) */}
     </nav>
   );
 };

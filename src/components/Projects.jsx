@@ -4,7 +4,9 @@ const Projects = () => {
   return (
     <div>
       <h2>Web Development Projects</h2>
-      {/* Your projects and their details go here */}
+      <div className="web-development-projects">
+        {/* ... (your projects JSX) */}
+      </div>
     </div>
   );
 };
