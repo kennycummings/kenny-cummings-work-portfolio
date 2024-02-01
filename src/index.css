@@ -65,6 +65,13 @@ ul a {
 
 .container {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left,
+.right {
+  width: 48%;
 }
 
 .image-container {
