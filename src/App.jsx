@@ -18,11 +18,10 @@ function App() {
         <Navigation />
 
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Set the home page as the root */}
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Add more routes as needed */}
         </Routes>
 
         <Footer />
