@@ -31,7 +31,23 @@ const Projects = () => {
         <br />
         <br />
 
-        {/* Repeat the above structure for other projects */}
+        <h3>
+          <center> Your Nutrition Radar </center>
+        </h3>
+
+        <a href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/Your-Nutrition-Radar-Home.png" alt="Your Nutrition Radar" style={{ width: '100%' }} />
+        </a>
+
+        <br />
+        <br />
+
+        <p>
+          <center>
+            <h4><b>Check out my diet and nutrition app:</b></h4>
+            <h4><b><a href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#" target="_blank" rel="noopener noreferrer">Your Nutrition Radar</a></b></h4>
+          </center>
+        </p>
 
       </div>
 
