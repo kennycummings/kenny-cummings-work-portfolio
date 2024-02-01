@@ -11,7 +11,7 @@ const Projects = () => {
         <br />
 
         <h3>
-          <center> Round on Me </center>
+          Round on Me
         </h3>
 
         <a href="https://round-on-me-d919eb5aa07c.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -22,17 +22,15 @@ const Projects = () => {
         <br />
 
         <p>
-          <center>
             <h4><b>Check out my golfer meet-up app:</b></h4>
             <h4><b><a href="https://round-on-me-d919eb5aa07c.herokuapp.com/" target="_blank" rel="noopener noreferrer">Round on Me</a></b></h4>
-          </center>
         </p>
 
         <br />
         <br />
 
         <h3>
-          <center> Your Nutrition Radar </center>
+          Your Nutrition Radar
         </h3>
 
         <a href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#" target="_blank" rel="noopener noreferrer">
@@ -43,10 +41,8 @@ const Projects = () => {
         <br />
 
         <p>
-          <center>
             <h4><b>Check out my diet and nutrition app:</b></h4>
             <h4><b><a href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#" target="_blank" rel="noopener noreferrer">Your Nutrition Radar</a></b></h4>
-          </center>
         </p>
 
       </div>
