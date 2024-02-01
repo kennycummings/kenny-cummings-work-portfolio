@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="container">
         <div className="left">
           <h4 style={{ color: 'whitesmoke' }}>Kenny Cummings</h4>
-          <h4 style={{ color: 'whitesmoke' }}>Web Developer | Digital Marketer & Merchandiser</h4>
+          <h4 style={{ color: 'whitesmoke' }}>Full Stack Web Developer | Digital Marketer & Merchandiser</h4>
         </div>
 
         <div className="right">
