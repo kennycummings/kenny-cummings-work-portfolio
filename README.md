@@ -27,3 +27,6 @@ The portfolio incorporates a clean and modern design with a consistent color sch
 This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshot
+
+<img src="./public/assets/images/kenny-cummings-work-portfolio-homepage.png" alt="Screenshot of homepage">
+
