@@ -17,7 +17,7 @@
 .vscode
 
 # Compiled JSX
-*.jsx
+# *.jsx
 
 # OS-specific files
 .DS_Store
