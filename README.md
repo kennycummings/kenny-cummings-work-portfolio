@@ -22,6 +22,12 @@ The Kenny Cummings Work Portfolio is a showcase of Kenny Cummings' skills, proje
 
 The portfolio incorporates a clean and modern design with a consistent color scheme and responsive layout. The use of Flexbox ensures proper alignment and spacing.
 
+## Contributors
+
+Kenny Cummings led the way.
+
+Dennis Itua helped with alignment and final touches with the site.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
