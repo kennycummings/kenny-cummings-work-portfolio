@@ -90,6 +90,9 @@ const Projects = () => {
             <b>Source: <a href="https://awma.com" target="_blank">AWMA Homepage</a></b>
           </p>
 
+        </div>
+        <div className='textAWMA'>
+
           <h4 style={{ textAlign: 'center' }}>
             Achieved an impressive 100% increase in clicks, impressions, and click-through-rate over a 6-month
             period by implementing strategic enhancements such as new copy, metadata optimization, navigation
