@@ -70,7 +70,7 @@ const Projects = () => {
 
       <div className="container">
         <div className="image-container">
-          <img src="./assets/images/AWMA-homepage.png" alt="AWMA Homepage Navigation Edit" style={{ width: '100%' }} className="image" />
+          <img src="./assets/images/AWMA-homepage-new.png" alt="AWMA Homepage Navigation Edit" style={{ width: '100%' }} className="image" />
         </div>
         <div className="text-container">
           <h4>AWMA - Web Content Specialist</h4>
