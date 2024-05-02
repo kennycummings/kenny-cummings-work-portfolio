@@ -79,6 +79,7 @@ const Projects = () => {
               <li>Achieved an impressive 100% increase in clicks, impressions, and click-through-rate over a 6-month
                 period by implementing strategic enhancements such as new copy, metadata optimization, navigation
                 improvements, and best SEO practices</li>
+              <li>Utilized knowledge of HTML, CSS, JavaScript, and Shopify Liquid to maintain and advance website</li>
               <li>Led a critical project overseeing the seamless website host migration from Shopify to Magento and
                 designing a captivating new homepage for the Magento site</li>
               <li>Nurtured business partnerships with NetElixir to strengthen SEO, site mapping, and content
@@ -86,6 +87,7 @@ const Projects = () => {
               <li>Managed website content and apps, ensuring content accuracy and resolving technical issues</li>
               <li>Proficiently utilized Google Analytics, Google My Business, and Google Ads to drive data-informed
                 decisions and executed successful PPC campaigns with NetElixir</li>
+              <li>Utilized Microsoft Office suite to bulk update pricing for product promotions</li>
             </ul>
             <b>Source: <a href="https://awma.com" target="_blank">AWMA Homepage</a></b>
           </p>
@@ -114,19 +116,19 @@ const Projects = () => {
           <p>
             <ul>
               <li>Managed luxury furniture brands including Porada, Bonaldo, Gamma Arredamenti, and Nicoline
-                Italia, contributing to a significant expansion of product offerings.</li>
+                Italia, contributing to a significant expansion of product offerings</li>
               <li>Introduced over 500 new products, skillfully creating and maintaining product detail pages in
-                Magento.</li>
+                Magento</li>
               <li>Excelled in content curation, meticulously aligning published content with brand identity and
-                best SEO practices.</li>
+                best SEO practices</li>
               <li>Utilized Adobe Photoshop for image editing and PDF spec sheet creation, ensuring top-notch
-                product presentation.</li>
+                product presentation</li>
               <li>Played a pivotal role in configuring product filters and sorting mechanisms to enhance user
-                experience.</li>
+                experience</li>
               <li>Demonstrated strong attention to detail by consistently updating product data and pricing for
-                accuracy.</li>
+                accuracy</li>
               <li>Provided valuable customer support, offering design expertise that directly led to over $100,000
-                in sales.</li>
+                in sales</li>
               <li>Authored SEO-optimized blog content using WordPress.</li>
             </ul>
             <b>Source: <a href="https://www.roomservice360.com/inspiration/the-changing-of-the-seasons-fall-is-here/"
