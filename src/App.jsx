@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import Header from './components/Header.jsx';
 import Navigation from './components/Navigation.jsx';
 import Footer from './components/Footer.jsx';
+import InDevelopment from './components/InDevelopment.jsx';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/in-development" element={<InDevelopment />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
 

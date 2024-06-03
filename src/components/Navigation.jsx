@@ -46,6 +46,11 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/indevelopment" className="nav-link" onClick={() => setNavOpen(false)}>
+                In Development
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/contact" className="nav-link" onClick={() => setNavOpen(false)}>
                 Contact
               </Link>

@@ -1,0 +1,12 @@
+.indevelopment-container {
+    padding: 25px;
+    /* Add some padding for better readability */
+}
+
+.in-development a:hover img {
+    /* Add hover effect for images within hyperlinks */
+    filter: brightness(80%);
+    /* Adjust brightness on hover */
+    transition: filter 0.3s ease;
+    /* Add smooth transition */
+}
