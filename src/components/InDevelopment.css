@@ -10,3 +10,8 @@
     transition: filter 0.3s ease;
     /* Add smooth transition */
 }
+
+.small-image {
+    width: 50%;
+    height: auto;
+}  
