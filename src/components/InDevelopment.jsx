@@ -13,7 +13,7 @@ const InDevelopment = () => {
         <br />
 
         <img
-          src="/assets/images/awoken-title-screen-character-portraits.png"
+          src="/assets/images/awoken-character-portrait-title-screen.png"
           alt="Awoken Title Screen"
           className="small-image"
         />
