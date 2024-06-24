@@ -4,12 +4,19 @@ import './InDevelopment.css';
 const InDevelopment = () => {
   return (
     <div>
-      <p>
-        <h2>In Development</h2>
+
+      <br />
+      <br />
+
+      <div className="in-development-container">
+        <div className="in-development">
+          <h2 id="in-development">In Development</h2>
+        </div>
+
         <br />
 
         <h3>Awoken</h3>
-        <h4>My video game in development made with GODOT!</h4>
+        <h5>My video game in development made with GODOT!</h5>
         <br />
 
         <img
@@ -19,14 +26,22 @@ const InDevelopment = () => {
         />
 
         <br />
-        <br />
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lInGzFuYrj0?si=14yj5Lcv6w8kThuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lInGzFuYrj0?si=14yj5Lcv6w8kThuI"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
 
-        <br />
-        <br />
-      </p>
+      <br />
+      <br />
     </div>
+  </div>
   );
 };
 
