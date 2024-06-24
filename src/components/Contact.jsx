@@ -12,7 +12,7 @@ const Contact = () => {
           href="/assets/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: 'blue' }}
+          style={{ color: 'blue', fontSize: '24px' }}
         >
           Download My Resume
         </a>
