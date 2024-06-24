@@ -13,9 +13,28 @@ const Footer = () => {
       </div>
 
       <div className="right">
-        <h5><a href="https://www.linkedin.com/in/kennycummings/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>LinkedIn</a></h5>
+        <h5>
+          <a
+            href="https://www.linkedin.com/in/kennycummings/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white' }}
+          >
+            LinkedIn
+          </a>
+        </h5>
         <h5>kennethccummings@gmail.com</h5>
         <h5>215.432.0306</h5>
+        <h5>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white' }}
+          >
+            Download My Resume
+          </a>
+        </h5>
       </div>
 
       <div className="left">

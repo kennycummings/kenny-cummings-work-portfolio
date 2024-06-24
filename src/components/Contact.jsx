@@ -7,10 +7,23 @@ const Contact = () => {
         <h2 id="contact-me">Contact Me</h2>
       </div>
 
+      <div className="resume">
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: 'blue' }}
+        >
+          Download My Resume
+        </a>
+      </div>
+
       <div className="container">
         <div className="left">
           <h4 style={{ color: 'whitesmoke' }}>Kenny Cummings</h4>
-          <h4 style={{ color: 'whitesmoke' }}>Full-Stack Web Developer | Digital Marketer & Merchandiser</h4>
+          <h4 style={{ color: 'whitesmoke' }}>
+            Full-Stack Web Developer | Digital Marketer & Merchandiser
+          </h4>
         </div>
 
         <div className="right">
