@@ -9,7 +9,7 @@ const Contact = () => {
 
       <div className="resume">
         <a
-          href="/resume.pdf"
+          href="/assets/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: 'blue' }}
