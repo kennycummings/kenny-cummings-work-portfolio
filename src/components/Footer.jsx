@@ -27,7 +27,7 @@ const Footer = () => {
         <h5>215.432.0306</h5>
         <h5>
           <a
-            href="/assets/resume.pdf"
+            href="/assets/KennyCummingsResume.docx"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'white' }}

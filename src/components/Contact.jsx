@@ -9,7 +9,7 @@ const Contact = () => {
 
       <div className="resume">
         <a
-          href="/assets/resume.pdf"
+          href="/assets/KennyCummingsResume.docx"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: 'blue', fontSize: '24px' }}
