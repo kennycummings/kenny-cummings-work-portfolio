@@ -92,7 +92,7 @@ const Projects = () => {
         <div className='textAWMA'>
 
           <h4 style={{ textAlign: 'center' }}>
-          Achieved an impressive 100% increase in clicks, impressions, and click-through-rate over a 6-month period by implementing strategic enhancements such as new copy, metadata optimization, navigation improvements, and best SEO practices
+          Achieved an impressive 100% increase in clicks, impressions, and click-through-rate over a 6-month period by implementing strategic enhancements such as new copy, metadata optimization, navigation improvements, and best SEO practices.
           </h4>
         </div>
       </div>
