@@ -83,7 +83,7 @@ const Projects = () => {
               <li>Nurtured business partnerships with NetElixir to strengthen SEO, site mapping, and content strategies</li>
               <li>Managed website content and apps, ensuring content accuracy and resolving technical issues</li>
               <li>Effectively utilized Google (Analytics, My Business, and Ads) to drive data-informed decisions and executed successful PPC campaigns</li>
-              <li>•	Managed content management systems including implementation, configuration, and maintenance</li>
+              <li>Managed content management systems including implementation, configuration, and maintenance</li>
             </ul>
             <b>Source: <a href="https://awma.com" target="_blank">AWMA Homepage</a></b>
           </p>
