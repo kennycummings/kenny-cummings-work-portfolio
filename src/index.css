@@ -192,3 +192,34 @@ button:focus-visible {
     width: 100%;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-heading h2 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  background: linear-gradient(135deg, #1F4068, #E43F5A);
+}
+
+.footer {
+  background: linear-gradient(135deg, #E43F5A, #1F4068);
+}
