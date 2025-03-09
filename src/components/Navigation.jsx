@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Navigation.css'; // Import the new CSS file
 
 const Navigation = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -9,27 +10,24 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav className="navbar navbar-expand-md">
       <div className="container">
         <Link to="/" className="navbar-brand">
-          Navigation
+          Kenny Cummings
         </Link>
 
         <button
           className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
           aria-expanded={isNavOpen}
           aria-label="Toggle navigation"
           onClick={toggleNav}
         >
-          ☰{/* Preferred hamburger icon */}
+          ☰
         </button>
 
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarResponsive">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={() => setNavOpen(false)}>
                 Home
@@ -55,7 +53,6 @@ const Navigation = () => {
                 Contact
               </Link>
             </li>
-            {/* Add more links as needed */}
           </ul>
         </div>
       </div>

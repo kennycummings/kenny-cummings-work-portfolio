@@ -1,0 +1,62 @@
+/* Contact.css (Same as Footer.css for consistency) */
+.contact-container {
+    background: linear-gradient(135deg, #1F4068, #E43F5A);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-container .main-heading h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left, 
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .right a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .right a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .contact-container h5,
+  .contact-container h6 {
+    margin: 5px 0;
+  }
+  
+  .contact-footer h6 {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-container .main-heading h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,49 +1,43 @@
 import React from 'react';
+import './Contact.css'; // Import the updated CSS file
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-container">
       <div className="main-heading">
         <h2 id="contact-me">Contact Me</h2>
       </div>
 
-      <div className="resume">
-        <a
-          href="/assets/KennyCummingsResume.docx"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'blue', fontSize: '24px' }}
-        >
-          Download My Resume
-        </a>
+      <div className="left">
+        <h4>Kenny Cummings</h4>
+        <h4>Full Stack Web Developer | AEM Web Content Author</h4>
       </div>
 
-      <div className="container">
-        <div className="left">
-          <h4 style={{ color: 'whitesmoke' }}>Kenny Cummings</h4>
-          <h4 style={{ color: 'whitesmoke' }}>
-            Full-Stack Web Developer | Digital Marketer & Merchandiser
-          </h4>
-        </div>
-
-        <div className="right">
-          <h4>
-            <a
-              href="https://www.linkedin.com/in/kennycummings/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'white' }}
-            >
-              LinkedIn
-            </a>
-          </h4>
-          <h5 style={{ color: 'whitesmoke' }}>kennethccummings@gmail.com</h5>
-          <h5 style={{ color: 'whitesmoke' }}>215.432.0306</h5>
-        </div>
+      <div className="right">
+        <h5>
+          <a
+            href="https://www.linkedin.com/in/kennycummings/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </h5>
+        <h5>kennethccummings@gmail.com</h5>
+        <h5>215.432.0306</h5>
+        <h5>
+          <a
+            href="/assets/KennyCummingsResume.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download My Resume
+          </a>
+        </h5>
       </div>
 
-      <div className="footer" style={{ textAlign: 'center' }}>
-        <h6 style={{ color: 'whitesmoke' }}>Made by Kenny Cummings</h6>
+      <div className="contact-footer">
+        <h6>Made by Kenny Cummings</h6>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css'; // Import the new CSS file
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
 
       <div className="left">
         <h4>Kenny Cummings</h4>
-        <h4>Web Developer | Digital Marketer & Merchandiser</h4>
+        <h4>Full Stack Web Developer | AEM Web Content Author</h4>
       </div>
 
       <div className="right">
@@ -18,7 +19,6 @@ const Footer = () => {
             href="https://www.linkedin.com/in/kennycummings/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'white' }}
           >
             LinkedIn
           </a>
@@ -30,7 +30,6 @@ const Footer = () => {
             href="/assets/KennyCummingsResume.docx"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'white' }}
           >
             Download My Resume
           </a>
