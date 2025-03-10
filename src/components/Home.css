@@ -1,29 +1,33 @@
-/* Home.css */
 .home-container {
-    background: linear-gradient(135deg, #1F4068, #E43F5A);
+    background: linear-gradient(135deg, #283048, #859398); /* Gradient background */
     color: white;
-    padding: 50px 20px;
-    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center; /* Centers everything inside */
+    line-height: 1.6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .home-container h2 {
+}
+
+.home-container h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .home-container p {
+    text-align: center; /* Explicitly center heading */
+}
+
+.home-container p {
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    margin-top: 20px;
+    text-align: justify; /* Keeps text justified */
+}
+
+.cta-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto; /* Centers the button */
     padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -34,30 +38,29 @@
     cursor: pointer;
     text-decoration: none;
     transition: background 0.3s ease-in-out;
-  }
-  
-  .cta-button:hover {
+}
+
+.cta-button:hover {
     background: white;
     color: #E43F5A;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .home-container {
-      padding: 30px;
+        padding: 30px;
     }
-  
+
     .home-container h2 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .home-container p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .cta-button {
-      font-size: 1rem;
-      padding: 10px 20px;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
-  }
-  
+}
