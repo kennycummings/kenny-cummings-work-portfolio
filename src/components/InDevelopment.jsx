@@ -28,7 +28,7 @@ const InDevelopment = () => {
 
       <div className="indevelopment-video">
         <iframe
-          src="https://www.youtube.com/watch?v=5OdtnaY8Fpg"
+          src="https://www.youtube.com/embed/5OdtnaY8Fpg"
           title="Awoken Game Preview"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
