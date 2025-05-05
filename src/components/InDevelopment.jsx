@@ -10,7 +10,7 @@ const InDevelopment = () => {
       <h5>An original turn-based RPG built in Godot, inspired by classics like Final Fantasy X and Chrono Trigger.</h5>
 
       <img
-        src="/assets/images/awoken-character-portrait-title-screen.png"
+        src="/assets/images/AwokenTitleScreen.png"
         alt="Awoken Title Screen"
         className="small-image"
       />
