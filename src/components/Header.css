@@ -1,0 +1,121 @@
+.site-header {
+  background: linear-gradient(135deg, #1F4068, #E43F5A);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  max-width: 1100px;
+  margin: 18px auto;
+  padding: 14px 18px;
+
+  /* Optional: keeps header visible while scrolling */
+  position: sticky;
+  top: 12px;
+  z-index: 50;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.brand {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.brand-text p {
+  margin: 2px 0 0 0;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.14);
+  transition: transform 0.15s ease-in-out, background 0.15s ease-in-out;
+  white-space: nowrap; /* prevents awkward wrap inside a button */
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.26);
+}
+
+.nav-link.active {
+  background: #FFD700;
+  color: #1F4068;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Keyboard accessibility */
+.nav-link:focus-visible {
+  outline: 3px solid rgba(255, 215, 0, 0.9);
+  outline-offset: 2px;
+}
+
+/* Optional: reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
+  }
+  .nav-link:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    top: 8px;
+    margin: 12px auto;
+    padding: 12px 14px;
+  }
+
+  .site-header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand {
+    justify-content: center;
+    min-width: unset;
+  }
+
+  .site-nav {
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 7px 10px;
+  }
+}

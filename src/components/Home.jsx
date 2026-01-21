@@ -4,21 +4,49 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home-container">
-      <h2>🚀 Welcome to My Digital Playground!</h2>
-      <p>
-        Hi, I'm <strong>Kenny Cummings</strong>, a results-driven <strong>Full Stack Web Developer & AEM Web Content Author</strong> with a passion for creating seamless, high-impact digital experiences. 
-        With a background spanning <strong>web development, digital marketing, and eCommerce</strong>, I specialize in crafting intuitive user interfaces, optimizing content strategy, and driving business growth.
+      <h2>🚀 Welcome — I’m Kenny Cummings</h2>
+
+      <p className="home-subheadline">
+        Front-end developer and <strong>AEM web content author</strong> focused on building
+        clean, scalable experiences that perform in production.
       </p>
 
-      <p>
-        My expertise lies in <strong>JavaScript, React.js, CSS, HTML, CMS, and PIM</strong>, and I thrive at the intersection of technology and strategy. From managing product lifecycles to executing engaging promotions, I bring ideas to life with efficiency and creativity.
+      <div className="home-highlights">
+        <div className="home-card">
+          <h3>What I do</h3>
+          <ul>
+            <li>Ship responsive UI and page updates fast (without breaking design systems)</li>
+            <li>Author and QA content in AEM with production-ready workflows</li>
+            <li>Support SEO and content performance across real business goals</li>
+          </ul>
+        </div>
+
+        <div className="home-card">
+          <h3>Tools & strengths</h3>
+          <ul>
+            <li><strong>Front-end:</strong> JavaScript, HTML, CSS (and React when needed)</li>
+            <li><strong>Content platforms:</strong> AEM / CMS workflows</li>
+            <li><strong>Execution:</strong> detail-oriented delivery under real deadlines</li>
+          </ul>
+        </div>
+      </div>
+
+      <p className="home-footerline">
+        📌 Explore my projects, see what I’m building with <strong>Awoken</strong>, and check out
+        my work experience across web content, eCommerce, and SEO.
       </p>
 
-      <p>📌 Take a look around, explore my projects, and see how I turn code into captivating digital experiences.</p>
-
-      <a href="/projects" className="cta-button">
-        View My Projects
-      </a>
+      <div className="home-cta-row">
+        <a href="/projects" className="cta-button">
+          View Projects
+        </a>
+        <a href="/indevelopment" className="cta-button secondary">
+          See Awoken
+        </a>
+        <a href="/contact" className="cta-button secondary">
+          Contact
+        </a>
+      </div>
     </div>
   );
 };

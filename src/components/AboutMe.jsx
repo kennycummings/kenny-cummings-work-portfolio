@@ -5,40 +5,71 @@ const AboutMe = () => {
   return (
     <div className="about-me-container">
       <div className="main-heading">
-        <h2 id="about-me">👋 Hi, I'm Kenny Cummings!</h2>
+        <h2 id="about-me">👋 Hi, I’m Kenny Cummings</h2>
       </div>
 
       {/* Intro Section */}
       <div className="intro-container">
         <div className="text-container">
           <p>
-            I’m a front-end developer who loves turning clean design into functional, responsive websites. Whether I’m coding an e-commerce platform or fine-tuning UX, I strive to build experiences that feel effortless to users and rewarding to clients.
+            I’m a front-end developer and AEM web content author who specializes in building
+            scalable, user-friendly digital experiences. My work lives at the intersection of
+            clean UI, maintainable code, and content that actually performs in production.
           </p>
+
           <p>
-            My journey into web development started with a simple site to showcase a creative project—and quickly turned into a passion for full-stack solutions, digital storytelling, and tech-driven growth. When I’m not coding, I’m usually writing music, working on indie games, or diving into UI trends.
+            Professionally, I’ve supported high-traffic e-commerce and content platforms by
+            shipping pages quickly, improving SEO and navigation, and collaborating across
+            design, marketing, and development teams. I’m comfortable working inside established
+            design systems while still finding opportunities to improve performance and usability.
+          </p>
+
+          <p>
+            Outside of client and enterprise work, I build original projects like <strong>Awoken</strong>,
+            a turn-based RPG where I handle gameplay systems, UI, and original music. These projects
+            let me explore architecture, UX flows, and creative problem-solving beyond typical web apps.
           </p>
         </div>
+
         <div className="image-container">
-          <img src="assets/images/Kenny-Cummings-LinkedIn-Photo.png" alt="Kenny Cummings" className="image" />
+          <img
+            src="assets/images/Kenny-Cummings-LinkedIn-Photo.png"
+            alt="Kenny Cummings"
+            className="image"
+          />
         </div>
       </div>
 
-      {/* Skills Section */}
+      {/* Skills / Value Section */}
       <div className="skills-container">
-        <h3>🚀 What I Bring to the Table:</h3>
+        <h3>🚀 What I Bring to the Table</h3>
         <ul>
-          <li>🖥 <strong>Full Stack Development:</strong> JavaScript, React.js, HTML, CSS, CMS solutions</li>
-          <li>📈 <strong>E-commerce Growth:</strong> Leveraging data to drive product performance</li>
-          <li>📊 <strong>SEO & Digital Strategy:</strong> Boosting visibility through optimized content</li>
-          <li>📌 <strong>Data-Driven Decision Making:</strong> Turning analytics into action</li>
+          <li>
+            🧩 <strong>Front-End Development:</strong> JavaScript, HTML, CSS, responsive layouts,
+            component-based UI, and client-side state
+          </li>
+          <li>
+            🏗 <strong>AEM & CMS Authoring:</strong> Page creation, component usage, QA workflows,
+            content updates, and production support
+          </li>
+          <li>
+            📈 <strong>SEO & Content Performance:</strong> Optimized product pages, metadata,
+            internal linking, and collaboration with SEO teams
+          </li>
+          <li>
+            🔍 <strong>Detail-Oriented Execution:</strong> Translating requirements into clean,
+            reliable implementations under real deadlines
+          </li>
         </ul>
       </div>
 
       {/* Call to Action */}
       <div className="cta-container">
-        <h3>💡 Let’s connect and build something amazing together!</h3>
+        <h3>💡 Let’s Work Together</h3>
         <p>
-          Reach out for collaborations, freelance projects, or just to talk shop about development, design, or creativity in tech.
+          I’m interested in front-end, content engineering, and AEM-focused roles where thoughtful
+          execution and collaboration matter. Feel free to reach out if you’d like to talk projects,
+          opportunities, or creative ideas.
         </p>
       </div>
     </div>

@@ -1,102 +1,173 @@
-/* Projects.css */
+/* Projects.css — DROP-IN REPLACEMENT */
+
 .projects-container {
-    background: linear-gradient(135deg, #1F4068, #E43F5A);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #1F4068, #E43F5A);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.projects-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.projects-container h3 {
+  font-size: 1.8rem;
+  margin: 0 0 12px 0;
+}
+
+/* Links */
+.projects-container a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFD700;
+  transition: color 0.3s ease-in-out;
+}
+
+.projects-container a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Image Styling */
+.projects-container img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  display: block;
+  margin: 12px auto 0 auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.projects-container a:hover img {
+  filter: brightness(80%);
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.35);
+}
+
+/* Project / text cards */
+.text-container,
+.image-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 22px auto;
+  text-align: left;
+  padding: 22px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Copy readability inside cards */
+.text-container p {
+  margin: 12px 0;
+  line-height: 1.65;
+}
+
+.text-container ul {
+  margin: 12px 0 16px 20px;
+  padding: 0;
+}
+
+.text-container li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Make your primary action links feel like buttons (without changing JSX) */
+.text-container a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.text-container a:hover {
+  text-decoration: none;
+}
+
+/* “Button” look for the last link in each project card (e.g., View Live Demo / GitHub Repo) */
+.text-container a:last-of-type {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFD700;
+  text-decoration: none;
+  transition: transform 0.15s ease-in-out, background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.text-container a:last-of-type:hover {
+  background: rgba(0, 0, 0, 0.42);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Work Experience Sections */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.container .image-container,
+.container .text-container {
+  width: 48%;
+  max-width: none; /* allow the 48% layout to actually breathe */
+  margin: 0;
+}
+
+/* Visual separation between Projects and Work Experience */
+#web-content-and-development,
+#copywriting-and-blogging {
+  margin-top: 80px;
+}
+
+.textAWMA {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 30px;
   }
-  
+
   .projects-container h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
+
   .projects-container h3 {
-    font-size: 1.8rem;
-    margin-top: 30px;
+    font-size: 1.5rem;
   }
-  
-  .projects-container a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFD700;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .projects-container a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  /* Image Styling */
-  .projects-container img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .projects-container a:hover img {
-    filter: brightness(80%);
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
-  }
-  
-  /* Text Containers */
-  .text-container, .image-container {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-    padding: 20px;
-  }
-  
-  /* Work Experience Sections */
+
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 40px 0;
-  }
-  
-  .container .image-container, 
-  .container .text-container {
-    width: 48%;
-  }
-  
-  .textAWMA {
+    flex-direction: column;
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 20px;
+    padding: 26px 0;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .projects-container {
-      padding: 30px;
-    }
-  
-    .projects-container h2 {
-      font-size: 2rem;
-    }
-  
-    .projects-container h3 {
-      font-size: 1.5rem;
-    }
-  
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .container .image-container, 
-    .container .text-container {
-      width: 100%;
-    }
+
+  .container .image-container,
+  .container .text-container {
+    width: 100%;
   }
-  
+
+  .text-container,
+  .image-container {
+    text-align: left;
+    padding: 18px;
+  }
+
+  .projects-container img {
+    max-width: 100%;
+  }
+}

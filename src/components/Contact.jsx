@@ -1,43 +1,62 @@
 import React from 'react';
-import './Contact.css'; // Import the updated CSS file
+import './Contact.css';
 
 const Contact = () => {
   return (
     <div className="contact-container">
       <div className="main-heading">
-        <h2 id="contact-me">Contact Me</h2>
+        <h2 id="contact-me">📬 Let’s Connect</h2>
       </div>
 
-      <div className="left">
-        <h4>Kenny Cummings</h4>
-        <h4>Full Stack Web Developer | AEM Web Content Author</h4>
-      </div>
+      <div className="contact-content">
+        {/* Left / Identity */}
+        <div className="contact-left">
+          <h3>Kenny Cummings</h3>
+          <p className="contact-title">
+            Front-End Developer & AEM Web Content Author
+          </p>
 
-      <div className="right">
-        <h5>
+          <p className="contact-blurb">
+            I’m open to front-end, content engineering, and AEM-focused roles.
+            Feel free to reach out about opportunities, collaborations, or projects.
+          </p>
+        </div>
+
+        {/* Right / Contact Methods */}
+        <div className="contact-right">
           <a
             href="https://www.linkedin.com/in/kennycummings/"
             target="_blank"
             rel="noopener noreferrer"
+            className="contact-link"
           >
-            LinkedIn
+            🔗 LinkedIn
           </a>
-        </h5>
-        <h5>kennethccummings@gmail.com</h5>
-        <h5>215.432.0306</h5>
-        <h5>
+
+          <a
+            href="mailto:kennethccummings@gmail.com"
+            className="contact-link"
+          >
+            ✉️ kennethccummings@gmail.com
+          </a>
+
+          <span className="contact-text">
+            📞 215&nbsp;•&nbsp;432&nbsp;•&nbsp;0306
+          </span>
+
           <a
             href="/assets/KennyCummingsResume.docx"
             target="_blank"
             rel="noopener noreferrer"
+            className="contact-link resume"
           >
-            Download My Resume
+            ⬇️ Download Resume
           </a>
-        </h5>
+        </div>
       </div>
 
       <div className="contact-footer">
-        <h6>Made by Kenny Cummings</h6>
+        <small>© {new Date().getFullYear()} Kenny Cummings</small>
       </div>
     </div>
   );
