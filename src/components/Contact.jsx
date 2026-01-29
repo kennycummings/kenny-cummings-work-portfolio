@@ -45,7 +45,7 @@ const Contact = () => {
           </span>
 
           <a
-            href="/assets/KennyCummingsResume.docx"
+            href="/assets/Kenny-C-Cummings-Resume.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link resume"
