@@ -104,6 +104,37 @@ const Projects = () => {
 
       {/* Web Content and Development Experience */}
       <h2 id="web-content-and-development">Web Content and Development Work Experience</h2>
+
+      {/* Vanguard — Own Your Future Project */}
+      <div className="container">
+        <div className="image-container">
+          <img
+            src="assets/images/vanguard-how-should-i-save-for-college.png"
+            alt="Vanguard Own Your Future — How should I save for college?"
+          />
+        </div>
+
+        <div className="text-container">
+          <h4>Vanguard — AEM Content Project (Own Your Future)</h4>
+          <ul>
+            <li>Published and maintained a financial education article in AEM using reusable components and structured content patterns</li>
+            <li>Implemented/validated SEO metadata, semantic HTML, and accessibility-minded copy updates to support discoverability and UX</li>
+            <li>Coordinated edits through Agile workflows and performed cross-device QA to ensure consistent rendering across breakpoints</li>
+          </ul>
+
+          <b>
+            Source:{' '}
+            <a
+              href="https://ownyourfuture.vanguard.com/content/en/learn/financial-planning/how-should-i-save-for-college.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              How should I save for college?
+            </a>
+          </b>
+        </div>
+      </div>
+
       <div className="container">
         <div className="image-container">
           <img src="assets/images/AWMA-homepage-new.png" alt="AWMA Homepage Navigation Edit" />
