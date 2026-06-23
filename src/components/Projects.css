@@ -9,6 +9,37 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Intro */
+.projects-intro {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Case study role/context line */
+.case-study-role {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Skill/tool tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.tag {
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
 /* Headings */
 .projects-container h2 {
   font-size: 2.5rem;
@@ -124,9 +155,9 @@
   margin: 0;
 }
 
-/* Visual separation between Projects and Work Experience */
-#web-content-and-development,
-#copywriting-and-blogging {
+/* Visual separation between sections */
+#featured-technical-project,
+#additional-web-development-projects {
   margin-top: 80px;
 }
 

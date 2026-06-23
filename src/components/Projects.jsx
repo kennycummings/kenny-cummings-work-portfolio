@@ -1,187 +1,203 @@
 import React from 'react';
 import './Projects.css';
 
+const professionalProjects = [
+  {
+    key: 'vanguard',
+    title: 'Vanguard — Enterprise AEM Content Operations',
+    role: 'AEM Web Content Author supporting high-traffic financial-services digital experiences.',
+    impact:
+      'Authoring and maintaining AEM content, assets, metadata, and component-based page updates across enterprise web experiences, with a focus on accessibility, responsive execution, governance, and release quality.',
+    bullets: [
+      'Authored and maintained AEM page/component updates, content-fragment-driven changes, and reusable content patterns',
+      'Supported headless and headful AEM experiences, including secure/public article patterns and component-based publishing workflows',
+      'Managed digital assets including images, PDFs, and video through Adobe DAM',
+      'Partnered with design, UX, engineering, QA, and stakeholders through Workfront/JIRA',
+      'Applied HTML, CSS, JavaScript, SEO metadata, semantic HTML, accessibility checks, and cross-browser QA to improve production quality',
+    ],
+    tags: ['AEM', 'Adobe DAM', 'Workfront', 'JIRA', 'HTML', 'CSS', 'JavaScript', 'SEO', 'Accessibility', 'Content Governance'],
+    image: 'assets/images/vanguard-how-should-i-save-for-college.png',
+    imageAlt: 'Vanguard Own Your Future — How should I save for college?',
+    link: 'https://ownyourfuture.vanguard.com/content/en/learn/financial-planning/how-should-i-save-for-college.html',
+    linkLabel: 'View Published AEM Article',
+  },
+  {
+    key: 'awma',
+    title: 'Asian World of Martial Arts — E-Commerce Website Migration & SEO Growth',
+    role: 'Web Content Specialist supporting e-commerce content, CMS updates, SEO, homepage design, and Shopify/Magento migration.',
+    impact:
+      'Helped improve e-commerce visibility and user experience through site migration, homepage redesign, SEO improvements, content updates, analytics, and front-end/CMS support.',
+    bullets: [
+      'Supported a critical migration from Shopify to Magento',
+      'Designed and maintained homepage/content updates to improve visual presentation and navigation',
+      'Used HTML, CSS, JavaScript, and Shopify Liquid to maintain and improve website functionality',
+      'Applied SEO best practices, content enhancements, Google Analytics, and Google Ads insights',
+      'Helped achieve a 100% increase in clicks, impressions, and click-through rate over 6 months',
+    ],
+    tags: ['Magento', 'Shopify', 'Shopify Liquid', 'HTML', 'CSS', 'JavaScript', 'SEO', 'Google Analytics', 'Google Ads', 'E-Commerce'],
+    image: 'assets/images/AWMA-homepage-new.png',
+    imageAlt: 'AWMA Homepage Navigation Edit',
+    link: 'https://awma.com',
+    linkLabel: 'View AWMA Homepage',
+  },
+  {
+    key: 'roomservice360',
+    title: 'room service 360° — Magento Product Content & E-Commerce UX',
+    role: 'E-Commerce Content Specialist managing luxury furniture product content and Magento product detail pages.',
+    impact:
+      'Created and maintained large-scale product content while improving e-commerce browsing, filtering, SEO, and brand presentation.',
+    bullets: [
+      'Added and maintained 500+ product detail pages in Magento',
+      'Managed luxury furniture brand content, product imagery, descriptions, and specifications',
+      'Configured product filters and sorting mechanisms to improve shopping UX',
+      'Used Adobe Photoshop for image editing and product presentation',
+      'Authored SEO-optimized blog and product content in WordPress and Magento',
+    ],
+    tags: ['Magento', 'WordPress', 'Product Detail Pages', 'E-Commerce', 'SEO', 'Photoshop', 'Product Content', 'UX'],
+    image: 'assets/images/roomservice360-fall-blog.png',
+    imageAlt: 'room service 360 Fall Blog',
+    link: 'https://www.roomservice360.com/inspiration/the-changing-of-the-seasons-fall-is-here/',
+    linkLabel: 'View room service 360 Blog',
+  },
+];
+
+const technicalProjects = [
+  {
+    key: 'awoken',
+    title: 'Awoken — Game UI & Systems Development',
+    role: 'Lead developer of a 2D JRPG built in Godot.',
+    impact:
+      'A long-term creative technical project demonstrating product ownership, custom UI systems, gameplay logic, interaction design, asset integration, and iterative development.',
+    bullets: [
+      'Built custom battle systems, party/menu interactions, inventory systems, and player-facing UI flows',
+      'Programmed gameplay and interface logic using GDScript',
+      'Designed UI patterns for RPG menus, combat actions, skills, equipment, status, and party management',
+      'Integrated custom assets, music, dialogue, and game scenes into a cohesive playable experience',
+      'Demonstrates sustained product ownership across design, development, content, polish, and QA',
+    ],
+    tags: ['Godot', 'GDScript', 'Game UI', 'UI Systems', 'Product Design', 'Interaction Design', 'RPG Systems'],
+    image: 'assets/images/awoken-title-screen.jpg',
+    imageAlt: 'Awoken RPG Title Screen',
+    link: 'https://awokenrpg.onrender.com/',
+    linkLabel: 'View Awoken Companion Site',
+  },
+];
+
+const webDevProjects = [
+  {
+    key: 'nutrition-radar',
+    title: 'Your Nutrition Radar',
+    image: 'assets/images/Your-Nutrition-Radar-Home.png',
+    imageAlt: 'Your Nutrition Radar home screen',
+    description:
+      'A browser-based nutrition and recipe exploration app built with vanilla JavaScript and a public food/recipe API.',
+    bullets: [
+      'Integrated a third-party recipe and nutrition API using JavaScript',
+      'Parsed and rendered dynamic API data to the DOM',
+      'Implemented conditional rendering and user-driven search flows',
+      'Collaborated on a team project using Git and GitHub',
+    ],
+    tech: 'JavaScript, HTML, CSS, third-party recipe/nutrition API',
+    note: 'Repo: Team-owned (available upon request)',
+    link: 'https://mykhailozakh.github.io/Your-Nutrition-Radar/#',
+    linkLabel: 'View Live Demo',
+  },
+  {
+    key: 'js-quiz-game',
+    title: 'JavaScript Quiz Game',
+    image: 'assets/images/javascript-quiz-game.png',
+    imageAlt: 'JavaScript Quiz Game',
+    description:
+      'A solo project demonstrating core JavaScript fundamentals such as DOM manipulation, event handling, and client-side state management.',
+    bullets: [
+      'Built dynamic question and score logic in vanilla JavaScript',
+      'Handled user input, validation, and game state transitions',
+      'Designed responsive UI using HTML and CSS',
+    ],
+    tech: 'JavaScript, HTML, CSS',
+    link: 'https://github.com/kennycummings/javascript-quiz-game',
+    linkLabel: 'View GitHub Repo',
+  },
+];
+
+const CaseStudyCard = ({ project, reverse }) => (
+  <div className="container case-study">
+    <div className="image-container">
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <img src={project.image} alt={project.imageAlt} />
+      </a>
+    </div>
+    <div className="text-container">
+      <h4>{project.title}</h4>
+      <p className="case-study-role">{project.role}</p>
+      <p>{project.impact}</p>
+      <ul>
+        {project.bullets.map((bullet) => (
+          <li key={bullet}>{bullet}</li>
+        ))}
+      </ul>
+      <div className="tags">
+        {project.tags.map((tag) => (
+          <span className="tag" key={tag}>
+            {tag}
+          </span>
+        ))}
+      </div>
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
+        {project.linkLabel}
+      </a>
+    </div>
+  </div>
+);
+
+const WebDevCard = ({ project }) => (
+  <div className="text-container">
+    <h3>{project.title}</h3>
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <img src={project.image} alt={project.imageAlt} />
+    </a>
+    <p>{project.description}</p>
+    <ul>
+      {project.bullets.map((bullet) => (
+        <li key={bullet}>{bullet}</li>
+      ))}
+    </ul>
+    <p>
+      <em>Tech: {project.tech}</em>
+    </p>
+    {project.note && (
+      <p>
+        <em>{project.note}</em>
+      </p>
+    )}
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
+      {project.linkLabel}
+    </a>
+  </div>
+);
+
 const Projects = () => {
   return (
     <div className="projects-container">
-      <h2 id="web-development-projects">Web Development Projects</h2>
+      <p className="projects-intro">
+        AEM Web Content Author and front-end content developer with production experience across AEM, Magento,
+        Shopify, WordPress, SEO, e-commerce, responsive web execution, and creative UI systems.
+      </p>
 
-      {/* Awoken Project */}
-      <div className="text-container">
-        <h3>Awoken (In Development)</h3>
-        <a href="https://awokenrpg.onrender.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/awoken-title-screen.jpg" alt="Awoken RPG Title Screen" />
-        </a>
-        <p>
-          <strong>Awoken</strong> is an original, narrative-driven turn-based RPG built in the Godot Engine.
-          I designed and implemented the core combat systems, dialogue flow, UI, and original soundtrack.
-        </p>
-        <ul>
-          <li>Custom turn-based battle system with skills, targeting, and feedback</li>
-          <li>Branching dialogue and cutscenes using Dialogic</li>
-          <li>Custom UI systems, animations, and visual effects</li>
-          <li>Original music composition and audio integration</li>
-        </ul>
-        <p>
-          <em>Tech: Godot, GDScript, Dialogic, Aseprite, custom UI systems</em>
-        </p>
-        <a href="https://awokenrpg.onrender.com/" target="_blank" rel="noopener noreferrer">
-          View Awoken Companion Site
-        </a>
-      </div>
+      <h2 id="featured-professional-work">Featured Professional Web / CMS / E-Commerce Work</h2>
+      {professionalProjects.map((project) => (
+        <CaseStudyCard project={project} key={project.key} />
+      ))}
 
-      {/* Your Nutrition Radar Project */}
-      <div className="text-container">
-        <h3>Your Nutrition Radar</h3>
-        <a
-          href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="assets/images/Your-Nutrition-Radar-Home.png"
-            alt="Your Nutrition Radar home screen"
-          />
-        </a>
-        <p>
-          <strong>Your Nutrition Radar</strong> is a browser-based nutrition and recipe exploration app
-          built with vanilla JavaScript and a public food/recipe API.
-        </p>
-        <ul>
-          <li>Integrated a third-party recipe and nutrition API using JavaScript</li>
-          <li>Parsed and rendered dynamic API data to the DOM</li>
-          <li>Implemented conditional rendering and user-driven search flows</li>
-          <li>Collaborated on a team project using Git and GitHub</li>
-        </ul>
-        <p>
-          <em>Tech: JavaScript, HTML, CSS, third-party recipe/nutrition API</em>
-        </p>
-        <p>
-          <em>Repo: Team-owned (available upon request)</em>
-        </p>
-        <a
-          href="https://mykhailozakh.github.io/Your-Nutrition-Radar/#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Live Demo
-        </a>
-      </div>
+      <h2 id="featured-technical-project">Featured Technical / Product Project</h2>
+      {technicalProjects.map((project) => (
+        <CaseStudyCard project={project} key={project.key} />
+      ))}
 
-      {/* JavaScript Quiz Game Project */}
-      <div className="text-container">
-        <h3>JavaScript Quiz Game</h3>
-        <a
-          href="https://kennycummings.github.io/javascript-quiz-game/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="assets/images/javascript-quiz-game.png"
-            alt="JavaScript Quiz Game"
-          />
-        </a>
-        <p>
-          A solo project demonstrating core JavaScript fundamentals such as DOM manipulation,
-          event handling, and client-side state management.
-        </p>
-        <ul>
-          <li>Built dynamic question and score logic in vanilla JavaScript</li>
-          <li>Handled user input, validation, and game state transitions</li>
-          <li>Designed responsive UI using HTML and CSS</li>
-        </ul>
-        <p>
-          <em>Tech: JavaScript, HTML, CSS</em>
-        </p>
-        <a
-          href="https://github.com/kennycummings/javascript-quiz-game"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View GitHub Repo
-        </a>
-      </div>
-
-      {/* Web Content and Development Experience */}
-      <h2 id="web-content-and-development">Web Content and Development Work Experience</h2>
-
-      {/* Vanguard — Own Your Future Project */}
-      <div className="container">
-        <div className="image-container">
-          <img
-            src="assets/images/vanguard-how-should-i-save-for-college.png"
-            alt="Vanguard Own Your Future — How should I save for college?"
-          />
-        </div>
-
-        <div className="text-container">
-          <h4>Vanguard — AEM Content Project (Own Your Future)</h4>
-          <ul>
-            <li>Published and maintained a financial education article in AEM using reusable components and structured content patterns</li>
-            <li>Implemented/validated SEO metadata, semantic HTML, and accessibility-minded copy updates to support discoverability and UX</li>
-            <li>Coordinated edits through Agile workflows and performed cross-device QA to ensure consistent rendering across breakpoints</li>
-          </ul>
-
-          <b>
-            Source:{' '}
-            <a
-              href="https://ownyourfuture.vanguard.com/content/en/learn/financial-planning/how-should-i-save-for-college.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              How should I save for college?
-            </a>
-          </b>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="image-container">
-          <img src="assets/images/AWMA-homepage-new.png" alt="AWMA Homepage Navigation Edit" />
-        </div>
-        <div className="text-container">
-          <h4>AWMA — Web Content Specialist</h4>
-          <ul>
-            <li>Achieved a 100% increase in clicks, impressions, and CTR through strategic content and navigation enhancements</li>
-            <li>Maintained and improved site functionality using HTML, CSS, JavaScript, and Shopify Liquid</li>
-            <li>Led a platform migration from Shopify to Magento</li>
-            <li>Managed SEO strategy and collaborated with NetElixir on site mapping</li>
-          </ul>
-          <b>
-            Source:{' '}
-            <a href="https://awma.com" target="_blank" rel="noopener noreferrer">
-              AWMA Homepage
-            </a>
-          </b>
-        </div>
-      </div>
-
-      {/* Copywriting and Blogging Experience */}
-      <h2 id="copywriting-and-blogging">Copywriting and Blogging Work Experience</h2>
-      <div className="container">
-        <div className="text-container">
-          <h4>room service 360 — Ecommerce Content Specialist</h4>
-          <ul>
-            <li>Published 500+ SEO-optimized product listings for luxury furniture brands</li>
-            <li>Created and edited marketing imagery using Adobe Photoshop</li>
-            <li>Configured product filters and improved on-site user experience</li>
-            <li>Authored blog content using WordPress</li>
-          </ul>
-          <b>
-            Source:{' '}
-            <a
-              href="https://www.roomservice360.com/inspiration/the-changing-of-the-seasons-fall-is-here/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              room service 360 Fall Blog
-            </a>
-          </b>
-        </div>
-        <div className="image-container">
-          <img src="assets/images/roomservice360-fall-blog.png" alt="room service 360 Fall Blog" />
-        </div>
-      </div>
+      <h2 id="additional-web-development-projects">Additional Web Development Projects</h2>
+      {webDevProjects.map((project) => (
+        <WebDevCard project={project} key={project.key} />
+      ))}
     </div>
   );
 };
