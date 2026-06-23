@@ -56,8 +56,6 @@ const professionalProjects = [
     tags: ['Magento', 'WordPress', 'Product Detail Pages', 'E-Commerce', 'SEO', 'Photoshop', 'Product Content', 'UX'],
     image: 'assets/images/roomservice360-fall-blog.png',
     imageAlt: 'room service 360 Fall Blog',
-    link: 'https://www.roomservice360.com/inspiration/the-changing-of-the-seasons-fall-is-here/',
-    linkLabel: 'View room service 360 Blog',
   },
 ];
 
@@ -123,9 +121,13 @@ const webDevProjects = [
 const CaseStudyCard = ({ project, reverse }) => (
   <div className="container case-study">
     <div className="image-container">
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      {project.link ? (
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <img src={project.image} alt={project.imageAlt} />
+        </a>
+      ) : (
         <img src={project.image} alt={project.imageAlt} />
-      </a>
+      )}
     </div>
     <div className="text-container">
       <h4>{project.title}</h4>
@@ -143,9 +145,11 @@ const CaseStudyCard = ({ project, reverse }) => (
           </span>
         ))}
       </div>
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
-        {project.linkLabel}
-      </a>
+      {project.link && (
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
+          {project.linkLabel}
+        </a>
+      )}
     </div>
   </div>
 );
