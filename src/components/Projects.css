@@ -138,6 +138,37 @@
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
+/* Compact screenshot gallery (optional, only renders when a project defines one) */
+.case-study-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.case-study-gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.case-study-gallery-image {
+  width: 100%;
+  max-width: none;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.case-study-gallery-item:hover .case-study-gallery-image {
+  transform: scale(1.04);
+}
+
 /* Work Experience Sections */
 .container {
   display: flex;

@@ -1,0 +1,158 @@
+/* DailyFitnessQuest.css */
+.dfq-container {
+  background: linear-gradient(135deg, #1F4068, #E43F5A);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dfq-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dfq-container h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.dfq-container h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Hero image */
+.dfq-container .small-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-top: 22px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.dfq-container .small-image:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Links / CTA buttons */
+.dfq-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 22px;
+}
+
+.dfq-container .link-button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.dfq-container .link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.26);
+}
+
+/* Content sections */
+.dfq-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 22px auto;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: left;
+}
+
+.dfq-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.dfq-section p {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.dfq-section p:last-child {
+  margin-bottom: 0;
+}
+
+.dfq-section ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+.dfq-section li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Screenshot gallery */
+.dfq-gallery {
+  width: 100%;
+  max-width: 1000px;
+  margin: 22px auto 6px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.dfq-gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.dfq-gallery-item img:hover {
+  transform: scale(1.02);
+  filter: brightness(0.9);
+}
+
+.dfq-gallery-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dfq-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dfq-container {
+    padding: 30px;
+  }
+
+  .dfq-container h2 {
+    font-size: 2rem;
+  }
+
+  .dfq-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .dfq-container .small-image {
+    width: 100%;
+  }
+}

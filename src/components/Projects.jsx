@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 const professionalProjects = [
@@ -79,6 +80,49 @@ const technicalProjects = [
     link: 'https://awokenrpg.onrender.com/',
     linkLabel: 'View Awoken Companion Site',
   },
+  {
+    key: 'daily-fitness-quest',
+    title: 'Daily Fitness Quest — Mobile Fitness RPG (Guardian Kenny Studios)',
+    role: 'Solo developer/designer of a React Native + Expo mobile app, currently in MVP testing and polish.',
+    impact:
+      'Daily Fitness Quest turns exercise into a quest-driven progression system, combining workout motivation with RPG-inspired milestones, boss gates, unlockable visual themes, and persistent profile customization. I built the MVP rapidly and am actively testing and polishing the experience for readability, retention, and mobile usability.',
+    bullets: [
+      'Built MVP rapidly from concept to working mobile app using React Native and Expo',
+      'Designed RPG-inspired progression for fitness motivation, including quest-based workouts and boss-gate milestones',
+      'Implemented persistent profile and theme customization with local storage wiring',
+      'Created mobile-first UI with readable, fantasy-themed screens optimized for on-the-go use',
+      'Added a free and premium-style background/theme unlock structure to support long-term engagement',
+    ],
+    tags: ['React Native', 'Expo', 'TypeScript', 'Mobile UI', 'Gamification', 'Async Storage / Persistent Settings', 'Product Design'],
+    image: 'assets/images/DailyFitnessQuest/daily-fitness-quest-feature-graphic.png',
+    imageAlt: 'Daily Quest Fitness — Fitness Becomes the Quest',
+    link: 'https://dailyquestfitness.netlify.app/',
+    linkLabel: 'Visit Live Site',
+    caseStudyPath: '/daily-fitness-quest',
+    caseStudyLabel: 'View Case Study',
+    gallery: [
+      {
+        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-home.png',
+        alt: 'Daily Fitness Quest home screen with active boss gate',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-quests.png',
+        alt: 'Daily Fitness Quest training path selection screen',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-boss-gate.png',
+        alt: 'Daily Fitness Quest boss gate detail screen',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-backgrounds.png',
+        alt: 'Daily Fitness Quest avatar and customization screen',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-settings.png',
+        alt: 'Daily Fitness Quest settings and safety screen',
+      },
+    ],
+  },
 ];
 
 const webDevProjects = [
@@ -149,6 +193,18 @@ const CaseStudyCard = ({ project, reverse }) => (
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           {project.linkLabel}
         </a>
+      )}
+      {project.caseStudyPath && (
+        <Link to={project.caseStudyPath}>{project.caseStudyLabel || 'View Case Study'}</Link>
+      )}
+      {project.gallery?.length > 0 && (
+        <div className="case-study-gallery">
+          {project.gallery.map((shot) => (
+            <div className="case-study-gallery-item" key={shot.src}>
+              <img className="case-study-gallery-image" src={shot.src} alt={shot.alt} />
+            </div>
+          ))}
+        </div>
       )}
     </div>
   </div>
