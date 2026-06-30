@@ -8,7 +8,7 @@ import Home from './components/Home.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
 import InDevelopment from './components/InDevelopment.jsx';
-import DailyFitnessQuest from './components/DailyFitnessQuest.jsx';
+import DailyQuestFitness from './components/DailyQuestFitness.jsx';
 import Contact from './components/Contact.jsx';
 
 import './App.css';
@@ -25,7 +25,7 @@ function App() {
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/indevelopment" element={<InDevelopment />} />
-            <Route path="/daily-fitness-quest" element={<DailyFitnessQuest />} />
+            <Route path="/daily-fitness-quest" element={<DailyQuestFitness />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

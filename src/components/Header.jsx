@@ -33,7 +33,7 @@ const Header = () => {
             Awoken
           </NavLink>
           <NavLink to="/daily-fitness-quest" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-            Daily Fitness Quest
+            Daily Quest Fitness
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Contact

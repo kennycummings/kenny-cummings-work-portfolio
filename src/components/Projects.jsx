@@ -82,16 +82,16 @@ const technicalProjects = [
   },
   {
     key: 'daily-fitness-quest',
-    title: 'Daily Fitness Quest — Mobile Fitness RPG (Guardian Kenny Studios)',
+    title: 'Daily Quest Fitness — Mobile Fitness RPG (Guardian Kenny Studios)',
     role: 'Solo developer/designer of a React Native + Expo mobile app, currently in MVP testing and polish.',
     impact:
-      'Daily Fitness Quest turns exercise into a quest-driven progression system, combining workout motivation with RPG-inspired milestones, boss gates, unlockable visual themes, and persistent profile customization. I built the MVP rapidly and am actively testing and polishing the experience for readability, retention, and mobile usability.',
+      'Daily Quest Fitness turns exercise into a quest-driven progression system with Daily Quests, Strength Quest Programs, PR Forge, an Estimated Max Calculator, Avatar Forge, character progression, Training Paths, Workout History, Theme customization, and full RPG progression mechanics.',
     bullets: [
-      'Built MVP rapidly from concept to working mobile app using React Native and Expo',
-      'Designed RPG-inspired progression for fitness motivation, including quest-based workouts and boss-gate milestones',
-      'Implemented persistent profile and theme customization with local storage wiring',
-      'Created mobile-first UI with readable, fantasy-themed screens optimized for on-the-go use',
-      'Added a free and premium-style background/theme unlock structure to support long-term engagement',
+      'Built a full-featured mobile fitness RPG with Daily Quests, Strength Programs, and character progression',
+      'Implemented PR Forge — generates percentage-based strength programs from current estimated maxes',
+      'Built an Estimated Max Calculator with built-in one-rep-max formulas',
+      'Created Avatar Forge for class, appearance, and progression customization tied to real training',
+      'Designed Training Paths (strength, endurance, recovery, mobility) and unlockable fantasy background themes',
     ],
     tags: ['React Native', 'Expo', 'TypeScript', 'Mobile UI', 'Gamification', 'Async Storage / Persistent Settings', 'Product Design'],
     image: 'assets/images/DailyFitnessQuest/daily-fitness-quest-feature-graphic.png',
@@ -102,24 +102,40 @@ const technicalProjects = [
     caseStudyLabel: 'View Case Study',
     gallery: [
       {
-        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-home.png',
-        alt: 'Daily Fitness Quest home screen with active boss gate',
+        src: 'assets/images/DailyFitnessQuest/complete-strength-quests.png',
+        alt: 'Complete Strength Quests screen showing guided workout with XP tracking',
       },
       {
-        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-quests.png',
-        alt: 'Daily Fitness Quest training path selection screen',
+        src: 'assets/images/DailyFitnessQuest/train-with-pr-forge.png',
+        alt: 'PR Forge screen showing percentage-based strength program generation',
       },
       {
-        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-boss-gate.png',
-        alt: 'Daily Fitness Quest boss gate detail screen',
+        src: 'assets/images/DailyFitnessQuest/track-strength-records.png',
+        alt: 'Strength Records screen showing estimated maxes and PR history',
       },
       {
-        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-backgrounds.png',
-        alt: 'Daily Fitness Quest avatar and customization screen',
+        src: 'assets/images/DailyFitnessQuest/estimate-your-maxes.png',
+        alt: 'Estimated Max Calculator screen with one-rep-max formulas',
       },
       {
-        src: 'assets/images/DailyFitnessQuest/daily-fitness-quest-settings.png',
-        alt: 'Daily Fitness Quest settings and safety screen',
+        src: 'assets/images/DailyFitnessQuest/level-your-hero.png',
+        alt: 'Hero level screen showing XP gains and RPG attributes',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/build-your-avatar.png',
+        alt: 'Avatar Forge screen showing hunter class and appearance customization',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/choose-your-training-path.png',
+        alt: 'Training Path selection screen with multiple fitness paths',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/workout-history.png',
+        alt: 'Workout History screen showing completed quests and consistency tracking',
+      },
+      {
+        src: 'assets/images/DailyFitnessQuest/background-themes.png',
+        alt: 'Background Themes screen showing unlockable fantasy-inspired visual themes',
       },
     ],
   },
