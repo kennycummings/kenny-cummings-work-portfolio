@@ -43,6 +43,9 @@ const Home = () => {
         <a href="/indevelopment" className="cta-button secondary">
           See Awoken
         </a>
+        <a href="/daily-fitness-quest" className="cta-button secondary">
+          See Daily Quest Fitness
+        </a>
         <a href="/contact" className="cta-button secondary">
           Contact
         </a>
