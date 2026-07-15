@@ -3,49 +3,44 @@ import './DailyQuestFitness.css';
 
 const screenshots = [
   {
-    src: '/assets/images/DailyFitnessQuest/complete-strength-quests.png',
-    alt: 'Complete Strength Quests screen showing guided workout with XP tracking',
-    caption: 'Complete Strength Quests — Track every set, earn XP, and complete fully guided strength workouts.',
+    src: '/assets/images/DailyFitnessQuest/daily-quests.png',
+    alt: "Home screen showing today's Daily Quest and an unlocked Boss Gate",
+    caption: 'Turn Workouts Into Daily Quests — Every session becomes a quest with XP, streaks, and boss gates.',
   },
   {
-    src: '/assets/images/DailyFitnessQuest/train-with-pr-forge.png',
-    alt: 'PR Forge screen showing percentage-based strength program generation',
-    caption: 'Train with PR Forge — Generate intelligent percentage-based strength programs from your current lifts.',
+    src: '/assets/images/DailyFitnessQuest/rest-days.png',
+    alt: 'Rest at Camp recovery modal that preserves the streak',
+    caption: 'Rest Days Keep Your Streak — Guilt-free recovery options that preserve your momentum.',
   },
   {
-    src: '/assets/images/DailyFitnessQuest/track-strength-records.png',
-    alt: 'Strength Records screen showing estimated maxes and PR history',
-    caption: 'Track Strength Records — Maintain estimated maxes and PR history across every major movement pattern.',
-  },
-  {
-    src: '/assets/images/DailyFitnessQuest/estimate-your-maxes.png',
-    alt: 'Estimated Max Calculator screen with one-rep-max formulas',
-    caption: 'Estimate Your Maxes — Quickly calculate accurate training maxes using built-in one-rep-max formulas.',
-  },
-  {
-    src: '/assets/images/DailyFitnessQuest/level-your-hero.png',
-    alt: 'Hero level screen showing XP gains and RPG attributes',
-    caption: 'Level Your Hero — Gain experience, level up, and improve your RPG-inspired attributes through real workouts.',
+    src: '/assets/images/DailyFitnessQuest/defeat-boss-gates.png',
+    alt: 'Boss Gate defeat screen for the Iron Warden milestone boss',
+    caption: 'Defeat Boss Gates — Milestone boss challenges that reward bonus XP and stats.',
   },
   {
     src: '/assets/images/DailyFitnessQuest/build-your-avatar.png',
-    alt: 'Avatar Forge screen showing hunter class and appearance customization',
-    caption: 'Build Your Avatar — Customize your hunter\'s class, appearance, and progression.',
+    alt: 'Avatar Forge screen customizing class, gear, aura, and rank frame',
+    caption: 'Build Your Hero — Customize class, gear, and aura, framed by a rank badge that grows as you level.',
   },
   {
-    src: '/assets/images/DailyFitnessQuest/choose-your-training-path.png',
-    alt: 'Training Path selection screen with strength, endurance, recovery, and mobility options',
-    caption: 'Choose Your Training Path — Select from multiple fitness paths including strength, endurance, recovery, and mobility.',
+    src: '/assets/images/DailyFitnessQuest/train-with-pr-forge.png',
+    alt: 'PR Forge screen showing a percentage-based strength program',
+    caption: 'Train with PR Forge — Percentage-based strength programs generated from your current lifts.',
   },
   {
-    src: '/assets/images/DailyFitnessQuest/workout-history.png',
-    alt: 'Workout History screen showing completed quests and consistency tracking',
-    caption: 'Workout History — Review completed quests and track your long-term consistency.',
+    src: '/assets/images/DailyFitnessQuest/complete-strength-quests.png',
+    alt: 'Active Strength Quest showing guided sets and an AMRAP set',
+    caption: 'Complete Strength Quests — Fully guided, programmed strength workouts, set by set.',
   },
   {
-    src: '/assets/images/DailyFitnessQuest/background-themes.png',
-    alt: 'Background Themes screen showing unlockable fantasy-inspired visual themes',
-    caption: 'Background Themes — Personalize the experience with unlockable fantasy-inspired themes.',
+    src: '/assets/images/DailyFitnessQuest/estimate-your-maxes.png',
+    alt: 'Estimated Max Calculator with one-rep-max formulas',
+    caption: 'Estimate Your Maxes — Built-in one-rep-max formulas for accurate training maxes.',
+  },
+  {
+    src: '/assets/images/DailyFitnessQuest/track-strength-records.png',
+    alt: 'PR Forge Records screen showing PRs across every lift',
+    caption: 'Track Strength Records — PR history and estimated maxes across every major movement.',
   },
 ];
 
@@ -57,8 +52,19 @@ const DailyQuestFitness = () => {
 
       <img
         src="/assets/images/DailyFitnessQuest/daily-fitness-quest-feature-graphic.png"
-        alt="Daily Quest Fitness — Fitness Becomes the Quest"
+        alt="Daily Quest Fitness logo and wordmark"
         className="small-image"
+      />
+
+      <video
+        src="/assets/images/DailyFitnessQuest/daily-fitness-quest-promo.mp4"
+        controls
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label="Daily Quest Fitness promo video"
+        style={{ width: '100%', maxWidth: '340px', borderRadius: '14px', display: 'block', margin: '1.25rem auto 0' }}
       />
 
       <div className="dfq-links">
