@@ -233,3 +233,9 @@
     max-width: 100%;
   }
 }
+
+/* Preserve complete current artwork and screenshots in project previews. */
+.projects-container .case-study-media-note { margin: 14px 0 0; line-height: 1.6; font-size: 0.95rem; }
+.projects-container .case-study-gallery-item a { display: block; margin: 0; padding: 0; border: 0; border-radius: 0; }
+.projects-container .case-study-gallery-image { height: auto; margin: 0; border-radius: 0; object-fit: contain; }
+.projects-container .case-study-gallery-item a:hover img { transform: none; }

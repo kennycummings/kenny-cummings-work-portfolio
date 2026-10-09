@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
+import { archwake, terralus } from '../data/projectContent.js';
 
 const professionalProjects = [
   {
@@ -60,82 +61,7 @@ const professionalProjects = [
   },
 ];
 
-const technicalProjects = [
-  {
-    key: 'awoken',
-    title: 'Awoken — Game UI & Systems Development',
-    role: 'Lead developer of a 2D JRPG built in Godot.',
-    impact:
-      'A long-term creative technical project demonstrating product ownership, custom UI systems, gameplay logic, interaction design, asset integration, and iterative development.',
-    bullets: [
-      'Built custom battle systems, party/menu interactions, inventory systems, and player-facing UI flows',
-      'Programmed gameplay and interface logic using GDScript',
-      'Designed UI patterns for RPG menus, combat actions, skills, equipment, status, and party management',
-      'Integrated custom assets, music, dialogue, and game scenes into a cohesive playable experience',
-      'Demonstrates sustained product ownership across design, development, content, polish, and QA',
-    ],
-    tags: ['Godot', 'GDScript', 'Game UI', 'UI Systems', 'Product Design', 'Interaction Design', 'RPG Systems'],
-    image: 'assets/images/awoken-title-screen.jpg',
-    imageAlt: 'Awoken RPG Title Screen',
-    link: 'https://awokenrpg.onrender.com/',
-    linkLabel: 'View Awoken Companion Site',
-  },
-  {
-    key: 'daily-fitness-quest',
-    title: 'Daily Quest Fitness — Mobile Fitness RPG (Guardian Kenny Studios)',
-    role: 'Solo developer/designer of a React Native + Expo mobile app, currently in MVP testing and polish.',
-    impact:
-      'Daily Quest Fitness turns exercise into a quest-driven progression system with Daily Quests, Strength Quest Programs, PR Forge, an Estimated Max Calculator, Avatar Forge, character progression, Training Paths, Workout History, Theme customization, and full RPG progression mechanics.',
-    bullets: [
-      'Built a full-featured mobile fitness RPG with Daily Quests, Strength Programs, and character progression',
-      'Implemented PR Forge — generates percentage-based strength programs from current estimated maxes',
-      'Built an Estimated Max Calculator with built-in one-rep-max formulas',
-      'Created Avatar Forge for class, appearance, and progression customization tied to real training',
-      'Designed Training Paths (strength, endurance, recovery, mobility) and unlockable fantasy background themes',
-    ],
-    tags: ['React Native', 'Expo', 'TypeScript', 'Mobile UI', 'Gamification', 'Async Storage / Persistent Settings', 'Product Design'],
-    image: 'assets/images/DailyFitnessQuest/daily-fitness-quest-feature-graphic.png',
-    imageAlt: 'Daily Quest Fitness logo and wordmark',
-    link: 'https://dailyquestfitness.netlify.app/',
-    linkLabel: 'Visit Live Site',
-    caseStudyPath: '/daily-fitness-quest',
-    caseStudyLabel: 'View Case Study',
-    gallery: [
-      {
-        src: 'assets/images/DailyFitnessQuest/daily-quests.png',
-        alt: "Home screen showing today's Daily Quest and an unlocked Boss Gate",
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/rest-days.png',
-        alt: 'Rest at Camp recovery modal that preserves the streak',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/defeat-boss-gates.png',
-        alt: 'Boss Gate defeat screen for the Iron Warden milestone boss',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/build-your-avatar.png',
-        alt: 'Avatar Forge screen customizing class, gear, aura, and rank frame',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/train-with-pr-forge.png',
-        alt: 'PR Forge screen showing a percentage-based strength program',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/complete-strength-quests.png',
-        alt: 'Active Strength Quest showing guided sets and an AMRAP set',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/estimate-your-maxes.png',
-        alt: 'Estimated Max Calculator with one-rep-max formulas',
-      },
-      {
-        src: 'assets/images/DailyFitnessQuest/track-strength-records.png',
-        alt: 'PR Forge Records screen showing PRs across every lift',
-      },
-    ],
-  },
-];
+const technicalProjects = [archwake, terralus];
 
 const webDevProjects = [
   {
@@ -174,7 +100,7 @@ const webDevProjects = [
   },
 ];
 
-const CaseStudyCard = ({ project, reverse }) => (
+const CaseStudyCard = ({ project }) => (
   <div className="container case-study">
     <div className="image-container">
       {project.link ? (
@@ -184,9 +110,10 @@ const CaseStudyCard = ({ project, reverse }) => (
       ) : (
         <img src={project.image} alt={project.imageAlt} />
       )}
+      {project.mediaNote && <p className="case-study-media-note">{project.mediaNote}</p>}
     </div>
     <div className="text-container">
-      <h4>{project.title}</h4>
+      <h3>{project.title}</h3>
       <p className="case-study-role">{project.role}</p>
       <p>{project.impact}</p>
       <ul>
@@ -213,7 +140,7 @@ const CaseStudyCard = ({ project, reverse }) => (
         <div className="case-study-gallery">
           {project.gallery.map((shot) => (
             <div className="case-study-gallery-item" key={shot.src}>
-              <img className="case-study-gallery-image" src={shot.src} alt={shot.alt} />
+              <a href={shot.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full image: ${shot.alt}`}><img className="case-study-gallery-image" src={shot.src} alt={shot.alt} loading="lazy" /></a>
             </div>
           ))}
         </div>
@@ -261,7 +188,7 @@ const Projects = () => {
         <CaseStudyCard project={project} key={project.key} />
       ))}
 
-      <h2 id="featured-technical-project">Featured Technical / Product Project</h2>
+      <h2 id="featured-technical-project">Featured Technical / Product Projects</h2>
       {technicalProjects.map((project) => (
         <CaseStudyCard project={project} key={project.key} />
       ))}

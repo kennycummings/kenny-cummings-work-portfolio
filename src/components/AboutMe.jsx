@@ -25,15 +25,16 @@ const AboutMe = () => {
           </p>
 
           <p>
-            Outside of client and enterprise work, I build original projects like <strong>Awoken</strong>,
-            a turn-based RPG where I handle gameplay systems, UI, and original music. These projects
+            Outside of client and enterprise work, I build <strong>Archwake</strong>, a mobile fitness RPG,
+            and <strong>Terralus</strong>, a story-driven RPG where I handle gameplay systems, UI,
+            and original music. These projects
             let me explore architecture, UX flows, and creative problem-solving beyond typical web apps.
           </p>
         </div>
 
         <div className="image-container">
           <img
-            src="assets/images/Kenny-Cummings-LinkedIn-Photo.png"
+            src="/assets/images/Kenny-Cummings-LinkedIn-Photo.png"
             alt="Kenny Cummings"
             className="image"
           />

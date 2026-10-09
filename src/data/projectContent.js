@@ -1,0 +1,63 @@
+// Current project copy and media, shared by cards and case studies.
+// Asset provenance and refresh dates are recorded in docs/PROJECT-MEDIA.md.
+export const terralus = {
+  key: 'terralus',
+  name: 'Terralus',
+  title: 'Terralus — Game UI & Systems Development',
+  role: 'Creator and lead developer of a story-driven 2D JRPG built in Godot.',
+  impact: 'An original fantasy RPG following Caden and seven playable heroes through a world shaped by war, memory, and ancient powers. Active-time battles, party builds, and cinematic Resonance skills bring the story to life.',
+  bullets: [
+    'Built active-time combat, targeting, skills, and cinematic Resonance interactions in GDScript',
+    'Designed party, equipment, inventory, and character-status UI flows',
+    'Integrated dialogue, cutscenes, exploration, and world-map sailing into the playable experience',
+    'Composed and implemented original music alongside game audio and visual assets',
+    'Own the product from narrative and systems design through development, polish, and QA',
+  ],
+  tags: ['Godot', 'GDScript', 'Game UI', 'Interaction Design', 'RPG Systems', 'Original Music'],
+  image: '/assets/images/terralus/feature-20260930.webp',
+  imageAlt: 'Terralus sword emblem and wordmark over a moonlit mountain valley and wildflower meadow',
+  link: 'https://playterralus.com/',
+  linkLabel: 'Visit Terralus',
+  caseStudyPath: '/terralus',
+  caseStudyLabel: 'View Terralus Case Study',
+  trailerUrl: 'https://www.youtube.com/watch?v=EyzAn_0Ka_Q',
+  trailerEmbed: 'https://www.youtube-nocookie.com/embed/EyzAn_0Ka_Q?rel=0',
+  gallery: [
+    { src: '/assets/images/terralus/01-forest-battle.png', alt: 'Terralus active-time forest battle with attack, skills, items, defend, and run commands', caption: 'Active-time combat and command UI' },
+    { src: '/assets/images/terralus/resonance.png', alt: 'Caden and Asher perform Burning Blossoms in Terralus', caption: 'Burning Blossoms — cinematic Resonance skill' },
+    { src: '/assets/images/terralus/03-world.png', alt: 'Exploring the Terralus world map', caption: 'World-map exploration' },
+    { src: '/assets/images/terralus/04-sailing.png', alt: 'Sailing between regions in Terralus', caption: 'World-map sailing' },
+    { src: '/assets/images/terralus/05-party.png', alt: 'Terralus party menu showing heroes and equipment', caption: 'Party and equipment management' },
+    { src: '/assets/images/terralus/06-status.png', alt: 'Terralus character-status screen', caption: 'Character progression and status UI' },
+    { src: '/assets/images/terralus/alblanca.png', alt: 'Exploring the settlement of Alblanca in Terralus', caption: 'Alblanca — settlement exploration' },
+    { src: '/assets/images/terralus/07-title.png', alt: 'Current Terralus title screen with the sword emblem', caption: 'Current title screen' },
+  ],
+};
+
+export const archwake = {
+  key: 'archwake',
+  name: 'Archwake',
+  title: 'Archwake — Mobile Fitness RPG',
+  role: 'Solo developer and designer of a React Native + Expo fitness app from Guardian Kenny Studios.',
+  impact: 'Archwake turns real workouts into Daily Ascents, XP, avatar progression, and milestone Boss Gates. PR Forge adds structured strength training, exercise substitutions, estimated maxes, and personal-record tracking.',
+  bullets: [
+    'Built Daily Ascents, Training Paths, streaks, recovery options, and RPG progression',
+    'Implemented PR Forge strength programs, guided sets, and equipment-aware exercise substitutions',
+    'Created Avatar Forge with character customization and progression unlocks',
+    'Built estimated-max tools and personal-record tracking for strength training',
+    'Designed local device storage, progress export/import, and persistent settings without an account requirement',
+  ],
+  tags: ['React Native', 'Expo', 'TypeScript', 'Mobile UI', 'Gamification', 'Local Storage', 'Product Design'],
+  image: '/assets/images/archwake/azure-warrior-20261009.png',
+  imageAlt: 'Archwake Azure Warrior character artwork preview, with blue armor and a dark geometric background',
+  mediaNote: 'Character art preview — the new artwork may differ from the current test build.',
+  link: 'https://archwake.com/',
+  linkLabel: 'Visit Archwake',
+  caseStudyPath: '/archwake',
+  caseStudyLabel: 'View Archwake Case Study',
+  gallery: [
+    { src: '/assets/images/archwake/azure-warrior-20261009.png', alt: 'Azure Warrior character art preview for Archwake', caption: 'Azure Warrior — character art preview' },
+    { src: '/assets/images/archwake/gold-guardian-20261009.png', alt: 'Gold Guardian character art preview for Archwake', caption: 'Gold Guardian — character art preview' },
+    { src: '/assets/images/archwake/steel-strider-20261009.png', alt: 'Steel Rogue character art preview for Archwake', caption: 'Steel Rogue — character art preview' },
+  ],
+};

@@ -10,7 +10,9 @@ The Kenny Cummings Work Portfolio is a showcase of Kenny Cummings' skills, proje
 
 - **About Me:** Offers a detailed description of Kenny Cummings' background, including his experience in web development, digital marketing, ecommerce, product management, and category management.
 
-- **Projects:** Showcases web development projects, including "Round on Me," a golfer meet-up app, and "Your Nutrition Radar," a diet and nutrition app.
+- **Projects:** Showcases professional web content work, Archwake (a React Native / Expo fitness RPG), Terralus (a Godot fantasy JRPG), and additional web development projects.
+
+- **Archwake & Terralus:** Dedicated case studies with current branding, project features, artwork/gameplay galleries, official product links, and the current Terralus gameplay trailer. Legacy portfolio URLs redirect to the renamed pages. See [project media sources](docs/PROJECT-MEDIA.md).
 
 - **Contact:** Displays contact information, allowing visitors to connect with Kenny Cummings via LinkedIn, email, or phone.
 

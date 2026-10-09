@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 60 392 392" width="392" height="392">
+<!-- Archwake mark, transparent background, trimmed to the ring.
+     Use this over photos, video and non-#0B0E14 surfaces. The inner disc is
+     filled, so the helm stays legible on light backgrounds too. -->
+<defs>
+  <linearGradient id="aw-gold" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#EAC85E"/><stop offset=".52" stop-color="#E3B341"/><stop offset="1" stop-color="#A87D24"/></linearGradient>
+  <radialGradient id="aw-disc" cx=".5" cy=".42" r=".62">
+    <stop offset="0" stop-color="#11151D"/><stop offset="1" stop-color="#06090F"/></radialGradient>
+  <linearGradient id="aw-eye" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#52A8E2"/><stop offset="1" stop-color="#2C7CBC"/></linearGradient>
+  <clipPath id="aw-discClip"><circle cx="256" cy="256" r="158"/></clipPath></defs>
+  <circle cx="256" cy="256" r="196" fill="url(#aw-gold)"/>
+  <circle cx="256" cy="256" r="158" fill="url(#aw-disc)"/>
+  <g clip-path="url(#aw-discClip)" fill="#E3B341" opacity=".22"><path d="M256 344 L-43.5 326.2 L-43.5 361.8 Z M256 344 L-28.7 249.3 L-37.9 283.7 Z M256 344 L5.5 178.9 L-12.2 209.7 Z M256 344 L56.8 119.7 L31.7 144.8 Z M256 344 L121.7 75.8 L90.9 93.5 Z M256 344 L195.7 50.1 L161.3 59.3 Z M256 344 L273.8 44.5 L238.2 44.5 Z M256 344 L350.7 59.3 L316.3 50.1 Z M256 344 L421.1 93.5 L390.3 75.8 Z M256 344 L480.3 144.8 L455.2 119.7 Z M256 344 L524.2 209.7 L506.5 178.9 Z M256 344 L549.9 283.7 L540.7 249.3 Z M256 344 L555.5 361.8 L555.5 326.2 Z"/></g>
+  <g clip-path="url(#aw-discClip)"><rect x="60" y="341" width="392" height="7" fill="#E3B341" opacity=".6"/></g>
+  <g transform="translate(256,262) scale(0.86) translate(-256,-256)">
+  <path fill="url(#aw-gold)" d="M224 156 L256 54 L288 156 Z"/>
+  <path fill="#A87D24" d="M256 54 L288 156 L256 156 Z"/>
+  <path fill="url(#aw-gold)" d="M256 128 L304 178 L369 232 L376 305 L342 352 L300 390 L256 412 L212 390 L170 352 L136 305 L143 232 L208 178 Z"/>
+  <path fill="#E6C150" d="M143 232 L256 208 L369 232 L360 250 L256 228 L152 250 Z"/>
+  <path d="M184 245 L243 260 L243 292 L186 279 Z" fill="url(#aw-eye)" stroke="#080B11" stroke-width="4"/>
+  <path d="M328 245 L269 260 L269 292 L326 279 Z" fill="url(#aw-eye)" stroke="#080B11" stroke-width="4"/>
+  <path fill="#E6C150" d="M247 250 L265 250 L262 336 L256 350 L250 336 Z"/>
+  <path fill="#080B11" d="M253 358 L259 358 L258 373 L254 373 Z"/>
+  </g>
+</svg>

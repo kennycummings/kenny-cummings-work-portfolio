@@ -9,7 +9,7 @@ const Header = () => {
         {/* Brand should link home */}
         <NavLink to="/" className="brand" aria-label="Go to Home">
           <img
-            src="assets/images/Kenny-Cummings-LinkedIn-Photo.png"
+            src="/assets/images/Kenny-Cummings-LinkedIn-Photo.png"
             alt="Kenny Cummings"
             className="brand-avatar"
           />
@@ -29,11 +29,11 @@ const Header = () => {
           <NavLink to="/projects" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Projects
           </NavLink>
-          <NavLink to="/indevelopment" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-            Awoken
+          <NavLink to="/terralus" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Terralus
           </NavLink>
-          <NavLink to="/daily-fitness-quest" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-            Daily Quest Fitness
+          <NavLink to="/archwake" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Archwake
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Contact

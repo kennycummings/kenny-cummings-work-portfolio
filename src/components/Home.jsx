@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       <p className="home-footerline">
-        📌 Explore my projects, see what I’m building with <strong>Awoken</strong>, and check out
+        📌 Explore my projects, see what I’m building with <strong>Archwake</strong> and <strong>Terralus</strong>, and check out
         my work experience across web content, eCommerce, and SEO.
       </p>
 
@@ -40,11 +40,11 @@ const Home = () => {
         <a href="/projects" className="cta-button">
           View Projects
         </a>
-        <a href="/indevelopment" className="cta-button secondary">
-          See Awoken
+        <a href="/terralus" className="cta-button secondary">
+          See Terralus
         </a>
-        <a href="/daily-fitness-quest" className="cta-button secondary">
-          See Daily Quest Fitness
+        <a href="/archwake" className="cta-button secondary">
+          See Archwake
         </a>
         <a href="/contact" className="cta-button secondary">
           Contact
